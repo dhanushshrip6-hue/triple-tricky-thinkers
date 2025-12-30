@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edubridge Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="box">
+    <h2>Edubridge Login</h2>
+
+    <div id="form">
+      <input type="text" id="user" placeholder="Username">
+      <input type="password" id="pass" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+<script>
+function login() {
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
+    if(user !== "" && pass !== ""){
+        // Save username to localStorage
+        localStorage.setItem('username', user);
+        // Redirect to dashboard
+        window.location.href = "tree.html"; // your dashboard file name
+    } else {
+        alert("Please fill all fields");
+    }
+}
+</script>
+
+</body>
+</html>
