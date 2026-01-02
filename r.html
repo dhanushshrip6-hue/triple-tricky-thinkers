@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduLearn – Syllabus</title>
+<link rel="stylesheet" href="styleeee.css">
+<link rel="stylesheet" href="t.css">
+</head>
+<body>
+
+<header>
+  <h1>EduLearn – Syllabus</h1>
+</header>
+
+<div class="syllabus-container">
+
+  <!-- 1. Data Structures -->
+  <div class="syllabus-item">
+    <div class="syllabus-title" onclick="toggleTopics(this)">
+      <span>Data Structures</span>
+      <span class="dot completed"></span>
+    </div>
+    <div class="topics-list">
+      <ul>
+        <h3>topics</h3>
+        <li>Arrays & Strings</li>
+        <li>Stacks</li>
+        <li>Queues</li>
+        <li>Linked Lists</li>
+        <li>Trees & Binary Trees</li>
+        <li>Graphs Basics</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 2. Python Programming -->
+  <div class="syllabus-item">
+    <div class="syllabus-title" onclick="toggleTopics(this)">
+      <span>Python Programming</span>
+      <span class="dot in-progress"></span>
+    </div>
+    <div class="topics-list">
+      <ul>
+        <h3>topics</h3>
+        <li>Python Basics</li>
+        <li>Variables & Data Types</li>
+        <li>Control Structures (if, loops)</li>
+        <li>Functions & Modules</li>
+        <li>File I/O</li>
+        <li>Exception Handling</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3. DBMS -->
+  <div class="syllabus-item">
+    <div class="syllabus-title" onclick="toggleTopics(this)">
+      <span>DBMS</span>
+      <span class="dot pending"></span>
+    </div>
+    <div class="topics-list">
+      <ul>
+        <h3>topics</h3>
+        <li>Introduction to Databases</li>
+        <li>ER Models</li>
+        <li>Relational Model & SQL</li>
+        <li>Normalization</li>
+        <li>Transactions & Concurrency</li>
+        <li>Indexing & Query Optimization</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. Web Development -->
+  <div class="syllabus-item">
+    <div class="syllabus-title" onclick="toggleTopics(this)">
+      <span>Web Development</span>
+      <span class="dot pending"></span>
+    </div>
+    <div class="topics-list">
+      <ul>
+        <h3>topics</h3>
+        <li>HTML Basics</li>
+        <li>CSS Styling</li>
+        <li>Flexbox & Grid</li>
+        <li>JavaScript Basics</li>
+        <li>DOM Manipulation</li>
+        <li>Event Handling</li>
+        <li>Responsive Design</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5. Artificial Intelligence -->
+  <div class="syllabus-item">
+    <div class="syllabus-title" onclick="toggleTopics(this)">
+      <span>Artificial Intelligence</span>
+      <span class="dot pending"></span>
+    </div>
+    <div class="topics-list">
+      <ul>
+        <h3>topics</h3>
+        <li>Introduction to AI</li>
+        <li>Machine Learning Basics</li>
+        <li>Supervised & Unsupervised Learning</li>
+        <li>Neural Networks</li>
+        <li>Natural Language Processing</li>
+        <li>AI Applications</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<button onclick="history.back()" class="back-btn">⬅ Back to Dashboard</button>
+
+<script>
+function toggleTopics(element){
+    const topics = element.nextElementSibling;
+    topics.style.display = (topics.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

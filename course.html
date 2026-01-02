@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <title>EduConnect Student Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="styleeee.css">
+</head>
+<body>
+
+<header>
+  <h1>EduLearn</h1>
+  <div class="welcome">Welcome, <span id="username">Student</span></div>
+</header>
+
+<div class="subjects">
+
+  <div class="card">
+    <div class="info">
+      <img src="data.png" alt="Data Structures">
+      <div class="text">
+        <h2>Data Structures</h2>
+        <p>Learn arrays, stacks, queues and more</p>
+        <div class="progress-container">
+          <div class="progress-dot completed"></div>
+          <div class="progress-dot in-progress"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button onclick="startCourse('Data Structures')">Start learning</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="info">
+      <img src="database-storage.png" alt="DBMS">
+      <div class="text">
+        <h2>DBMS</h2>
+        <p>Learn database concepts and SQL</p>
+        <div class="progress-container">
+          <div class="progress-dot completed"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button onclick="startCourse('DBMS')">Start learning</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="info">
+      <img src="python.png" alt="Python">
+      <div class="text">
+        <h2>Python Programming</h2>
+        <p>Basics of Python language and coding</p>
+        <div class="progress-container">
+          <div class="progress-dot in-progress"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button onclick="startCourse('Python')">Start learning</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="info">
+      <img src="code.png" alt="Web Development">
+      <div class="text">
+        <h2>Web Development</h2>
+        <p>HTML, CSS, JS basics for beginners</p>
+        <div class="progress-container">
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button onclick="startCourse('Web Development')">Start learning</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="info">
+      <img src="artificial-intelligence.png" alt="Web Development">
+      <div class="text">
+        <h2>Artificial intelligencet</h2>
+        <p>Intro to AI,machine learning concepts</p>
+        <div class="progress-container">
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+          <div class="progress-dot pending"></div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button onclick="startCourse('Artificial intelligence')">Start learning</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Display username from localStorage
+const username = localStorage.getItem('username') || 'Student';
+document.getElementById('username').innerText = username;
+
+// Redirect to course page
+function startCourse(subject){
+    if(subject === 'Data Structures'){
+        window.location.href = 'r.html';
+    } else if(subject === 'DBMS'){
+        window.location.href = 'r.html';
+    } else if(subject === 'Python'){
+        window.location.href = 'r.html';
+    } else if(subject === 'Web Development'){
+        window.location.href = 'r.html';
+    }else if(subject === 'AI'){
+        window.location.href = 'r.html';
+    }
+}
+</script>
+
+</body>
+</html>
