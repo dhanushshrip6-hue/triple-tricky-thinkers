@@ -1,0 +1,105 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #ea0909;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 15px;
+}
+
+header h1 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* INTRO (HOME CONTENT) */
+.intro {
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.proverb {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 12px;
+}
+
+.wat {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* COMMON SECTION STYLE */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+/* OBJECTIVES (HOME) */
+.objectives {
+    border-left: 6px solid #4caf50;
+}
+
+.objectives h2 {
+    color: #2e7d32;
+}
+
+.objectives li {
+    list-style-type: square;
+}
+
+/* WHO SECTION */
+.who {
+    border-left: 6px solid #2196f3;
+}
+
+/* PROMISE */
+.promise {
+    background-color: #222;
+    color: #4caf50;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+

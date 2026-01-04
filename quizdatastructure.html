@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data Structures Quiz</title>
+<link rel="stylesheet" href="reference.css">
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<header><h1>Data Structures Quiz</h1></header>
+<div class="quiz-container">
+    <div class="question" id="q1">
+        <h3>1. What is a stack?</h3>
+        <button onclick="checkAnswer(true)">LIFO structure</button>
+        <button onclick="checkAnswer(false)">FIFO structure</button>
+        <button onclick="checkAnswer(false)">Linked list</button>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+        <h3>2. Which data structure uses FIFO?</h3>
+        <button onclick="checkAnswer(false)">Stack</button>
+        <button onclick="checkAnswer(true)">Queue</button>
+        <button onclick="checkAnswer(false)">Tree</button>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+        <h3>3. Which is used for hierarchical data?</h3>
+        <button onclick="checkAnswer(true)">Tree</button>
+        <button onclick="checkAnswer(false)">Queue</button>
+        <button onclick="checkAnswer(false)">Stack</button>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+        <h3>4. Which of these is a linear structure?</h3>
+        <button onclick="checkAnswer(false)">Tree</button>
+        <button onclick="checkAnswer(true)">Array</button>
+        <button onclick="checkAnswer(false)">Graph</button>
+    </div>
+    <div class="question" id="q5" style="display:none;">
+        <h3>5. Which data structure is used in recursion?</h3>
+        <button onclick="checkAnswer(true)">Stack</button>
+        <button onclick="checkAnswer(false)">Queue</button>
+        <button onclick="checkAnswer(false)">Linked List</button>
+    </div>
+    <div class="feedback" id="finalFeedback"></div>
+</div>
+<footer><a href="reference.html">← Back to References</a></footer>
+</body>
+</html>

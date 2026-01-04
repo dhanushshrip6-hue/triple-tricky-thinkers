@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Development Quiz</title>
+<link rel="stylesheet" href="reference.css">
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<header><h1>Web Development Quiz</h1></header>
+<div class="quiz-container">
+    <div class="question" id="q1">
+        <h3>1. What does HTML stand for?</h3>
+        <button onclick="checkAnswer(true)">HyperText Markup Language</button>
+        <button onclick="checkAnswer(false)">HyperText Markdown Language</button>
+        <button onclick="checkAnswer(false)">HighText Machine Language</button>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+        <h3>2. Which tag is used for a paragraph?</h3>
+        <button onclick="checkAnswer(true)">&lt;p&gt;</button>
+        <button onclick="checkAnswer(false)">&lt;h1&gt;</button>
+        <button onclick="checkAnswer(false)">&lt;div&gt;</button>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+        <h3>3. Which property changes text color in CSS?</h3>
+        <button onclick="checkAnswer(true)">color</button>
+        <button onclick="checkAnswer(false)">background</button>
+        <button onclick="checkAnswer(false)">font-size</button>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+        <h3>4. Which tag is used to include JavaScript?</h3>
+        <button onclick="checkAnswer(true)">&lt;script&gt;</button>
+        <button onclick="checkAnswer(false)">&lt;javascript&gt;</button>
+        <button onclick="checkAnswer(false)">&lt;js&gt;</button>
+    </div>
+    <div class="question" id="q5" style="display:none;">
+        <h3>5. Which attribute is used to link CSS?</h3>
+        <button onclick="checkAnswer(true)">rel="stylesheet"</button>
+        <button onclick="checkAnswer(false)">type="script"</button>
+        <button onclick="checkAnswer(false)">src="style.css"</button>
+    </div>
+    <div class="feedback" id="finalFeedback"></div>
+</div>
+<footer><a href="reference.html">← Back to References</a></footer>
+</body>
+</html>

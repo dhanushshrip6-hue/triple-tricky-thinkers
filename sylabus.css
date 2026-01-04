@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f0fe;   /* light blue background */
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Subject box */
+.box {
+  background: white;
+  margin: 15px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 8px;
+  border: 2px solid #1a73e8;   /* BLUE highlight */
+}
+
+/* Subject title */
+h2 {
+  margin: 0;
+  cursor: pointer;
+  color: #1a73e8;
+}
+
+/* Hover effect */
+.box:hover {
+  background-color: #f1f6ff;  /* light blue highlight */
+}
+
+ul {
+  display: none;
+  margin-top: 10px;
+}
+
+li {
+  margin: 5px 0;
+}
+

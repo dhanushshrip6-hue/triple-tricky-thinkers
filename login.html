@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Edubridge Login</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Edubridge Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-  <div class="box">
-    <h2>Edubridge Login</h2>
 
-    <div id="form">
-      <input type="text" id="user" placeholder="Username">
-      <input type="password" id="pass" placeholder="Password">
-      <button onclick="login()">Login</button>
-    </div>
-  </div>
+<div class="box">
+    <h2>Login</h2>
 
-<script>
-function login() {
-    let user = document.getElementById("user").value;
-    let pass = document.getElementById("pass").value;
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">Login</button>
 
-    if(user !== "" && pass !== ""){
-        // Save username to localStorage
-        localStorage.setItem('username', user);
-        // Redirect to dashboard
-        window.location.href = "div.html"; // your dashboard file name
-    } else {
-        alert("Please fill all fields");
-    }
-}
-</script>
+    
+    
+</div>
 
+<script src="login.js"></script>
 </body>
 </html>
+

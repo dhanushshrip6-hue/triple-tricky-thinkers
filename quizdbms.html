@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DBMS Quiz</title>
+<link rel="stylesheet" href="reference.css">
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<header><h1>DBMS Quiz</h1></header>
+<div class="quiz-container">
+    <div class="question" id="q1">
+        <h3>1. What does DBMS stand for?</h3>
+        <button onclick="checkAnswer(true)">Database Management System</button>
+        <button onclick="checkAnswer(false)">Data Backup Management System</button>
+        <button onclick="checkAnswer(false)">Digital Binary Management System</button>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+        <h3>2. Which command is used to retrieve data?</h3>
+        <button onclick="checkAnswer(true)">SELECT</button>
+        <button onclick="checkAnswer(false)">UPDATE</button>
+        <button onclick="checkAnswer(false)">DELETE</button>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+        <h3>3. Primary key is used to?</h3>
+        <button onclick="checkAnswer(true)">Uniquely identify a record</button>
+        <button onclick="checkAnswer(false)">Delete records</button>
+        <button onclick="checkAnswer(false)">Update records</button>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+        <h3>4. Which normal form removes duplicate columns?</h3>
+        <button onclick="checkAnswer(true)">1NF</button>
+        <button onclick="checkAnswer(false)">2NF</button>
+        <button onclick="checkAnswer(false)">3NF</button>
+    </div>
+    <div class="question" id="q5" style="display:none;">
+        <h3>5. SQL stands for?</h3>
+        <button onclick="checkAnswer(true)">Structured Query Language</button>
+        <button onclick="checkAnswer(false)">Simple Query Language</button>
+        <button onclick="checkAnswer(false)">Structured Question Language</button>
+    </div>
+    <div class="feedback" id="finalFeedback"></div>
+</div>
+<footer><a href="reference.html">← Back to References</a></footer>
+</body>
+</html>

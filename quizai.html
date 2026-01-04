@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Quiz</title>
+<link rel="stylesheet" href="reference.css">
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<header><h1>Artificial Intelligence Quiz</h1></header>
+<div class="quiz-container">
+    <div class="question" id="q1">
+        <h3>1. What does AI stand for?</h3>
+        <button onclick="checkAnswer(true)">Artificial Intelligence</button>
+        <button onclick="checkAnswer(false)">Automated Internet</button>
+        <button onclick="checkAnswer(false)">Active Input</button>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+        <h3>2. Which of these is a machine learning type?</h3>
+        <button onclick="checkAnswer(true)">Supervised Learning</button>
+        <button onclick="checkAnswer(false)">Sequential Learning</button>
+        <button onclick="checkAnswer(false)">Linear Learning</button>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+        <h3>3. AI can be applied in?</h3>
+        <button onclick="checkAnswer(true)">Robotics, NLP, Games</button>
+        <button onclick="checkAnswer(false)">Only Calculators</button>
+        <button onclick="checkAnswer(false)">Only Web Development</button>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+        <h3>4. Which is a Python library for AI?</h3>
+        <button onclick="checkAnswer(true)">TensorFlow</button>
+        <button onclick="checkAnswer(false)">ReactJS</button>
+        <button onclick="checkAnswer(false)">Bootstrap</button>
+    </div>
+    <div class="question" id="q5" style="display:none;">
+        <h3>5. AI is used for?</h3>
+        <button onclick="checkAnswer(true)">Automation & Decision Making</button>
+        <button onclick="checkAnswer(false)">Manual Calculations</button>
+        <button onclick="checkAnswer(false)">Only Graphics</button>
+    </div>
+    <div class="feedback" id="finalFeedback"></div>
+</div>
+<footer><a href="reference.html">← Back to References</a></footer>
+</body>
+</html>

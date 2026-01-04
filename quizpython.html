@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Python Quiz</title>
+<link rel="stylesheet" href="reference.css">
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<header><h1>Python Quiz</h1></header>
+<div class="quiz-container">
+    <div class="question" id="q1">
+        <h3>1. Which keyword is used to define a function?</h3>
+        <button onclick="checkAnswer(true)">def</button>
+        <button onclick="checkAnswer(false)">func</button>
+        <button onclick="checkAnswer(false)">function</button>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+        <h3>2. What is the output of print(2**3)?</h3>
+        <button onclick="checkAnswer(true)">8</button>
+        <button onclick="checkAnswer(false)">6</button>
+        <button onclick="checkAnswer(false)">9</button>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+        <h3>3. Which of these is a mutable type?</h3>
+        <button onclick="checkAnswer(true)">List</button>
+        <button onclick="checkAnswer(false)">Tuple</button>
+        <button onclick="checkAnswer(false)">String</button>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+        <h3>4. What is the output of len("Python")?</h3>
+        <button onclick="checkAnswer(true)">6</button>
+        <button onclick="checkAnswer(false)">5</button>
+        <button onclick="checkAnswer(false)">7</button>
+    </div>
+    <div class="question" id="q5" style="display:none;">
+        <h3>5. Which symbol is used for comments?</h3>
+        <button onclick="checkAnswer(true)">#</button>
+        <button onclick="checkAnswer(false">//</button>
+        <button onclick="checkAnswer(false)">/* */</button>
+    </div>
+    <div class="feedback" id="finalFeedback"></div>
+</div>
+<footer><a href="reference.html">← Back to References</a></footer>
+</body>
+</html>
