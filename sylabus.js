@@ -1,4 +1,4 @@
-function toggle(element) {
+function jump(element) {
   let list = element.nextElementSibling;
   if (list.style.display === "block") {
     list.style.display = "none";

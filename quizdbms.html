@@ -3,44 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <title>DBMS Quiz</title>
+
 <link rel="stylesheet" href="reference.css">
-<script src="quiz.js" defer></script>
+<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<header><h1>DBMS Quiz</h1></header>
-<div class="quiz-container">
-    <div class="question" id="q1">
-        <h3>1. What does DBMS stand for?</h3>
-        <button onclick="checkAnswer(true)">Database Management System</button>
-        <button onclick="checkAnswer(false)">Data Backup Management System</button>
-        <button onclick="checkAnswer(false)">Digital Binary Management System</button>
-    </div>
-    <div class="question" id="q2" style="display:none;">
-        <h3>2. Which command is used to retrieve data?</h3>
-        <button onclick="checkAnswer(true)">SELECT</button>
-        <button onclick="checkAnswer(false)">UPDATE</button>
-        <button onclick="checkAnswer(false)">DELETE</button>
-    </div>
-    <div class="question" id="q3" style="display:none;">
-        <h3>3. Primary key is used to?</h3>
-        <button onclick="checkAnswer(true)">Uniquely identify a record</button>
-        <button onclick="checkAnswer(false)">Delete records</button>
-        <button onclick="checkAnswer(false)">Update records</button>
-    </div>
-    <div class="question" id="q4" style="display:none;">
-        <h3>4. Which normal form removes duplicate columns?</h3>
-        <button onclick="checkAnswer(true)">1NF</button>
-        <button onclick="checkAnswer(false)">2NF</button>
-        <button onclick="checkAnswer(false)">3NF</button>
-    </div>
-    <div class="question" id="q5" style="display:none;">
-        <h3>5. SQL stands for?</h3>
-        <button onclick="checkAnswer(true)">Structured Query Language</button>
-        <button onclick="checkAnswer(false)">Simple Query Language</button>
-        <button onclick="checkAnswer(false)">Structured Question Language</button>
-    </div>
-    <div class="feedback" id="finalFeedback"></div>
+
+<div class="quiz-box">
+<h1>DBMS Quiz</h1>
+
+<div class="question active" data-answer="Primary Key">
+<h3>1. Which uniquely identifies a record in a table?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Foreign Key</option>
+<option>Primary Key</option>
+<option>Index</option>
+<option>Constraint</option>
+</select>
 </div>
-<footer><a href="reference.html">← Back to References</a></footer>
+
+<div class="question" data-answer="SQL">
+<h3>2. Which language is used to query databases?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>HTML</option>
+<option>SQL</option>
+<option>Python</option>
+<option>Java</option>
+</select>
+</div>
+
+<div class="question" data-answer="Normalization">
+<h3>3. Process of reducing redundancy is called?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Indexing</option>
+<option>Denormalization</option>
+<option>Normalization</option>
+<option>Backup</option>
+</select>
+</div>
+
+<div class="question" data-answer="Foreign Key">
+<h3>4. Which key links two tables?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Primary Key</option>
+<option>Foreign Key</option>
+<option>Unique Key</option>
+<option>Candidate Key</option>
+</select>
+</div>
+
+<div class="question" data-answer="JOIN">
+<h3>5. Which SQL operation combines rows from two tables?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>UNION</option>
+<option>JOIN</option>
+<option>MERGE</option>
+<option>INSERT</option>
+</select>
+</div>
+
+</div>
+
+<div id="giftPopup">
+<div class="gift-content">
+<h1>🎁 Surprise!</h1>
+<p>Correct Answer! You earned a gift!</p>
+<img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="gift animation">
+<button onclick="nextQuestion()">Next</button>
+</div>
+</div>
+
+<div id="wrongPopup">
+<div class="gift-content">
+<h1>❌ Wrong!</h1>
+<p>Try Again 💪</p>
+<button onclick="nextQuestion()">Next</button>
+</div>
+</div>
+
+<script src="quiz.js"></script>
 </body>
+<footer><a href="home.html">← Back to References</a></footer>
 </html>
+

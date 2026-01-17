@@ -1,30 +1,45 @@
-let currentQ = 1;
+let questions = document.querySelectorAll(".question");
+let current = 0;
 let score = 0;
 
-function checkAnswer(correct) {
-    const popup = document.createElement('div');
-    popup.className = 'popup';
-    if(correct) {
-        popup.innerHTML = '🎊 Correct!';
-        popup.style.backgroundColor = '#4CAF50';
-        score++;
-    } else {
-        popup.innerHTML = '❌ Wrong!';
-        popup.style.backgroundColor = '#f44336';
-    }
-    document.body.appendChild(popup);
-    setTimeout(() => { popup.remove(); }, 1500);
+function checkAnswer(select){
+if(select.value === "") return;
 
-    // Show next question
-    document.getElementById('q'+currentQ).style.display = 'none';
-    currentQ++;
-    const nextQ = document.getElementById('q'+currentQ);
-    if(nextQ) {
-        nextQ.style.display = 'block';
-    } else {
-        const fb = document.getElementById('finalFeedback');
-        if(score === 5) fb.innerHTML = '🎉 Excellent! You scored 5/5!';
-        else if(score >= 3) fb.innerHTML = '🙂 Good job! You scored '+score+'/5. You can do even better!';
-        else fb.innerHTML = '😕 You scored '+score+'/5. Try again next time!';
-    }
+let correct = questions[current].dataset.answer;
+select.disabled = true;
+
+if(select.value === correct){
+score++;
+document.getElementById("giftPopup").style.display="flex";
+}else{
+document.getElementById("wrongPopup").style.display="flex";
 }
+}
+
+function nextQuestion(){
+document.getElementById("giftPopup").style.display="none";
+document.getElementById("wrongPopup").style.display="none";
+
+questions[current].classList.remove("active");
+current++;
+
+if(current < questions.length){
+questions[current].classList.add("active");
+}else{
+showResult();
+}
+}
+
+function showResult(){
+let feedback =
+score === 5 ? "🌟 Excellent!" :
+score >= 3 ? "👍 Good Job!" :
+"📘 Keep Practicing!";
+
+document.querySelector(".quiz-box").innerHTML = `
+<h2>Quiz Completed</h2>
+<h3>Score: ${score} / 5</h3>
+<p>${feedback}</p>
+`;
+}
+

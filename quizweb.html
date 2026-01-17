@@ -2,45 +2,91 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Development Quiz</title>
+<title>Python Quiz</title>
 <link rel="stylesheet" href="reference.css">
-<script src="quiz.js" defer></script>
+<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<header><h1>Web Development Quiz</h1></header>
-<div class="quiz-container">
-    <div class="question" id="q1">
-        <h3>1. What does HTML stand for?</h3>
-        <button onclick="checkAnswer(true)">HyperText Markup Language</button>
-        <button onclick="checkAnswer(false)">HyperText Markdown Language</button>
-        <button onclick="checkAnswer(false)">HighText Machine Language</button>
-    </div>
-    <div class="question" id="q2" style="display:none;">
-        <h3>2. Which tag is used for a paragraph?</h3>
-        <button onclick="checkAnswer(true)">&lt;p&gt;</button>
-        <button onclick="checkAnswer(false)">&lt;h1&gt;</button>
-        <button onclick="checkAnswer(false)">&lt;div&gt;</button>
-    </div>
-    <div class="question" id="q3" style="display:none;">
-        <h3>3. Which property changes text color in CSS?</h3>
-        <button onclick="checkAnswer(true)">color</button>
-        <button onclick="checkAnswer(false)">background</button>
-        <button onclick="checkAnswer(false)">font-size</button>
-    </div>
-    <div class="question" id="q4" style="display:none;">
-        <h3>4. Which tag is used to include JavaScript?</h3>
-        <button onclick="checkAnswer(true)">&lt;script&gt;</button>
-        <button onclick="checkAnswer(false)">&lt;javascript&gt;</button>
-        <button onclick="checkAnswer(false)">&lt;js&gt;</button>
-    </div>
-    <div class="question" id="q5" style="display:none;">
-        <h3>5. Which attribute is used to link CSS?</h3>
-        <button onclick="checkAnswer(true)">rel="stylesheet"</button>
-        <button onclick="checkAnswer(false)">type="script"</button>
-        <button onclick="checkAnswer(false)">src="style.css"</button>
-    </div>
-    <div class="feedback" id="finalFeedback"></div>
+
+<div class="quiz-box">
+<h1>Python Quiz</h1>
+
+<div class="question active" data-answer="def">
+<h3>1. Which keyword defines a function in Python?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>func</option>
+<option>def</option>
+<option>function</option>
+<option>define</option>
+</select>
 </div>
-<footer><a href="reference.html">← Back to References</a></footer>
+
+<div class="question" data-answer="List">
+<h3>2. Which data type stores multiple items in Python?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Dictionary</option>
+<option>Tuple</option>
+<option>List</option>
+<option>Set</option>
+</select>
+</div>
+
+<div class="question" data-answer="Indentation">
+<h3>3. Which is mandatory in Python to define code blocks?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Brackets</option>
+<option>Indentation</option>
+<option>Semicolon</option>
+<option>Parentheses</option>
+</select>
+</div>
+
+<div class="question" data-answer="for">
+<h3>4. Which loop iterates over a sequence in Python?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>while</option>
+<option>do-while</option>
+<option>for</option>
+<option>repeat</option>
+</select>
+</div>
+
+<div class="question" data-answer="import">
+<h3>5. Which keyword is used to include a module in Python?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>require</option>
+<option>include</option>
+<option>import</option>
+<option>using</option>
+</select>
+</div>
+
+</div>
+
+<div id="giftPopup">
+<div class="gift-content">
+<h1>🎁 Surprise!</h1>
+<p>Correct Answer! You earned a gift!</p>
+<img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="gift animation">
+<button onclick="nextQuestion()">Next</button>
+</div>
+</div>
+
+<div id="wrongPopup">
+<div class="gift-content">
+<h1>❌ Wrong!</h1>
+<p>Try Again 💪</p>
+<button onclick="nextQuestion()">Next</button>
+</div>
+</div>
+
+<script src="quiz.js"></script>
 </body>
+<footer><a href="home.html">← Back to References</a></footer>
 </html>
+

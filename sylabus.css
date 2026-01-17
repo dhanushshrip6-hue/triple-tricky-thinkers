@@ -1,8 +1,26 @@
-body {
+
+  .data {
   font-family: Arial, sans-serif;
-  background-color: #e8f0fe;   /* light blue background */
+  min-height: 100vh;
+
+  background-image: url("web.jpg"); /* SAME image for all pages */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
   padding: 20px;
 }
+.python{
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background-image: url("database.png"); /* SAME image for all pages */
+  background-position: center;
+  background: size 100%;;
+
+  padding: 20px;
+}
+
 
 h1 {
   text-align: center;
@@ -16,19 +34,19 @@ h1 {
   padding: 15px;
   width: 80%;
   border-radius: 8px;
-  border: 2px solid #1a73e8;   /* BLUE highlight */
+  border: 2px solid #232425;  
 }
 
-/* Subject title */
+
 h2 {
   margin: 0;
   cursor: pointer;
-  color: #1a73e8;
+  color: #111213;
 }
 
-/* Hover effect */
+
 .box:hover {
-  background-color: #f1f6ff;  /* light blue highlight */
+  background-color: #f1f6ff;  
 }
 
 ul {
@@ -39,4 +57,5 @@ ul {
 li {
   margin: 5px 0;
 }
+
 

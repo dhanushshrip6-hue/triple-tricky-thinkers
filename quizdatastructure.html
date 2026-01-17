@@ -3,44 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <title>Data Structures Quiz</title>
+
 <link rel="stylesheet" href="reference.css">
-<script src="quiz.js" defer></script>
+<link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-<header><h1>Data Structures Quiz</h1></header>
-<div class="quiz-container">
-    <div class="question" id="q1">
-        <h3>1. What is a stack?</h3>
-        <button onclick="checkAnswer(true)">LIFO structure</button>
-        <button onclick="checkAnswer(false)">FIFO structure</button>
-        <button onclick="checkAnswer(false)">Linked list</button>
-    </div>
-    <div class="question" id="q2" style="display:none;">
-        <h3>2. Which data structure uses FIFO?</h3>
-        <button onclick="checkAnswer(false)">Stack</button>
-        <button onclick="checkAnswer(true)">Queue</button>
-        <button onclick="checkAnswer(false)">Tree</button>
-    </div>
-    <div class="question" id="q3" style="display:none;">
-        <h3>3. Which is used for hierarchical data?</h3>
-        <button onclick="checkAnswer(true)">Tree</button>
-        <button onclick="checkAnswer(false)">Queue</button>
-        <button onclick="checkAnswer(false)">Stack</button>
-    </div>
-    <div class="question" id="q4" style="display:none;">
-        <h3>4. Which of these is a linear structure?</h3>
-        <button onclick="checkAnswer(false)">Tree</button>
-        <button onclick="checkAnswer(true)">Array</button>
-        <button onclick="checkAnswer(false)">Graph</button>
-    </div>
-    <div class="question" id="q5" style="display:none;">
-        <h3>5. Which data structure is used in recursion?</h3>
-        <button onclick="checkAnswer(true)">Stack</button>
-        <button onclick="checkAnswer(false)">Queue</button>
-        <button onclick="checkAnswer(false)">Linked List</button>
-    </div>
-    <div class="feedback" id="finalFeedback"></div>
+
+<div class="quiz-box">
+<h1>Data Structures Quiz</h1>
+
+<div class="question active" data-answer="Queue">
+<h3>1. Which data structure follows FIFO?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Stack</option>
+<option>Queue</option>
+<option>Tree</option>
+<option>Graph</option>
+</select>
 </div>
-<footer><a href="reference.html">← Back to References</a></footer>
+
+<div class="question" data-answer="Stack">
+<h3>2. Which data structure follows LIFO?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Queue</option>
+<option>Array</option>
+<option>Stack</option>
+<option>Linked List</option>
+</select>
+</div>
+
+<div class="question" data-answer="Tree">
+<h3>3. Which is a non-linear data structure?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Array</option>
+<option>Stack</option>
+<option>Queue</option>
+<option>Tree</option>
+</select>
+</div>
+
+<div class="question" data-answer="Stack">
+<h3>4. Which data structure is used in recursion?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Queue</option>
+<option>Stack</option>
+<option>Heap</option>
+<option>Graph</option>
+</select>
+</div>
+
+<div class="question" data-answer="Linked List">
+<h3>5. Which data structure uses pointers?</h3>
+<select onchange="checkAnswer(this)">
+<option value="">-- Select Answer --</option>
+<option>Array</option>
+<option>Linked List</option>
+<option>Stack</option>
+<option>Queue</option>
+</select>
+</div>
+
+</div>
+
+<!-- Correct Birthday Gift Style Popup -->
+<div id="giftPopup">
+<div class="gift-content">
+<h1>🎁 Surprise!</h1>
+<p>Correct Answer! You earned a gift!</p>
+<img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="gift animation">
+<button onclick="nextQuestion()">Next</button>
+</div>
+</div>
+
+<!-- Wrong Popup -->
+<div id="wrongPopup">
+<div class="gift-content">
+<h1>❌ Wrong!</h1>
+<p>Try Again 💪</p>
+<button onclick="nextQuestion()">Next</button>
+</div>
+</div>
+
+<script src="quiz.js"></script>
 </body>
+<footer><a href="home.html">← Back to References</a></footer>
 </html>
+
