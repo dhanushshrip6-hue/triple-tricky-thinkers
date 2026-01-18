@@ -1,4 +1,4 @@
-/* GENERAL RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 25px;
+  padding: 30px 25px;
   background: linear-gradient(90deg, #ff9a9e, #fad0c4);
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -41,13 +41,13 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-/* DASHBOARD LAYOUT */
+
 .dashboard {
     display: flex;
     min-height: 100vh;
 }
 
-/* LEFT PANEL: GREETING + COURSES */
+
 .left-panel {
     flex: 1;
     padding: 30px;
@@ -79,7 +79,7 @@ header .welcome {
     margin-bottom: 20px;
 }
 
-/* SUBJECT CARDS */
+
 .subjects {
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ header .welcome {
     background: #45a049;
 }
 
-/* RIGHT PANEL: BOOK IMAGE */
+
 .right-panel {
     flex: 1;
     position: relative;
@@ -156,7 +156,7 @@ header .welcome {
     border-left: 2px solid #4CAF50;
 }
 
-/* RESPONSIVE */
+
 @media(max-width: 900px){
     .dashboard {
         flex-direction: column;

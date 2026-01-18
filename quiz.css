@@ -24,7 +24,7 @@ margin-top:10px;
 .question{display:none;}
 .question.active{display:block;}
 
-/* Full screen popup */
+
 #giftPopup, #wrongPopup{
 position:fixed;
 inset:0;

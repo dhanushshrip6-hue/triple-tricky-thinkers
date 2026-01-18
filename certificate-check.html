@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Verify Certificate</title>
+<link rel="stylesheet" href="certificate.css">
+</head>
+<body>
+
+<div class="verify-box">
+  <h2>Enter Certificate Code</h2>
+  <input type="text" id="codeInput" placeholder="Enter code">
+  <button onclick="verify()">Get Certificate</button>
+</div>
+
+<script>
+function verify() {
+  const input = document.getElementById("codeInput").value.trim();
+  const stored = localStorage.getItem("cert_code");
+
+  if (input === stored) {
+    window.location.href = "certificate.html";
+  } else {
+    alert("Invalid Certificate Code");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -6,118 +6,129 @@
     <link rel="stylesheet" href="reference.css">
 </head>
 <body>
-
-<header>
-    <h1>EduLearn</h1>
-    <p>Subject-wise Reference Materials</p>
-</header>
-
-<section class="reference-container">
-
-    <h2>📚 Subjects</h2>
-
-
-
-    <div class="subject-list">
-        <button onclick="openSubject('ds')">Data Structures</button>
-        <button onclick="openSubject('dbms')">DBMS</button>
-        <button onclick="openSubject('python')">Python</button>
-        <button onclick="openSubject('web')">Web Development</button>
-        <button onclick="openSubject('ai')">Artificial Intelligence</button>
+    <div class="topbar">
+        <span class="logo">EduLearn</span>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="refernce.html">Resource</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
 
-    <!-- DATA STRUCTURES -->
-    <div class="subject-content" id="ds">
-        <h3>📘 Data Structures Notes</h3>
-        <a href="datastructure.pdf">Download PDF</a>
+    <header>
+        <p>Subject-wise Reference Materials</p>
+    </header>
 
-        <h3>🎥 Video</h3>
-      <iframe src="https://youtu.be/xLetJpcjHS0?si=FB1ambMhH5PWd4SM" allowfullscreen> watch on youtube</iframe>
-        <h3>🔗 Useful Links</h3>
-        <ul class="external-links">
-            <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">GeeksforGeeks – Data Structures</a></li>
-            <li><a href="https://www.w3schools.com/dsa/" target="_blank">W3Schools – DSA</a></li>
-        </ul>
-        <button onclick="window.location.href="quizdatastructure.html">Take Quiz</button>
-        <a href="quizdatastructure.html">take quiz</a>
-    </div>
+    <section class="reference-container">
+        <h2>📚 Subjects</h2>
 
-    <!-- DBMS -->
-    <div class="subject-content" id="dbms">
-        <h3>📘 DBMS Notes</h3>
-        <a href="dbms.pdf" target="_blank">Download PDF</a>
+        <div class="subject-list">
+            <button onclick="openSubject('ds')">Data Structures</button>
+            <button onclick="openSubject('dbms')">DBMS</button>
+            <button onclick="openSubject('python')">Python</button>
+            <button onclick="openSubject('web')">Web Development</button>
+            <button onclick="openSubject('ai')">Artificial Intelligence</button>
+        </div>
 
-        <h3>🎥 Video</h3>
-         <iframe src="https://youtu.be/6Iu45VZGQDk?si=eEItkWvozHEJ9V34" allowfullscreen></iframe>
-        <h3>🔗 Useful Links</h3>
-        <ul class="external-links">
-            <li><a href="https://www.geeksforgeeks.org/dbms/" target="_blank">GeeksforGeeks - DBMS</a></li>
-            <li><a href="https://www.w3schools.com/sql/" target="_blank">W3Schools -SQL</a></li>
-        </ul>
-        <button onclick="window.location.href="quizdbms.html">Take Quiz</button>
-        <a href="quizdbms.html">take quiz</a>
-    </div>
+        <!-- Data Structures -->
+        <div class="subject-content" id="ds">
+            <h3>📘 Data Structures Notes</h3>
+            <a href="datastructure.pdf" target="_blank">Download PDF</a>
 
-    <!-- PYTHON -->
-    <div class="subject-content" id="python">
-        <h3>📘 Python Notes</h3>
-        <a href="pdfs/python.pdf" target="_blank">Download PDF</a>
+            <h3>🎥 Video</h3>
+            <iframe src="https://www.youtube.com/embed/xLetJpcjHS0" allowfullscreen></iframe>
+            <p><a href="https://youtu.be/xLetJpcjHS0" target="_blank">Watch on YouTube</a></p>
 
-        <h3>🎥 Video</h3>
-        <iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc" allowfullscreen></iframe>
+            <h3>🔗 Useful Links</h3>
+            <ul class="external-links">
+                <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">GeeksforGeeks – Data Structures</a></li>
+                <li><a href="https://www.w3schools.com/dsa/" target="_blank">W3Schools – DSA</a></li>
+            </ul>
 
-        <h3>🔗 Useful Links</h3>
-        <ul class="external-links">
-            <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks – Python</a></li>
-            <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools – Python</a></li>
-        </ul>
-        <button onclick="window.location.href="quizpython.html">Take Quiz</button>
-        <a href="quizpython.html">take quiz</a>
-    </div>
+            <a class="btn" href="quizdatastructure.html">Take Quiz</a>
+        </div>
 
-    <!-- WEB DEVELOPMENT -->
-    <div class="subject-content" id="web">
-        <h3>📘 Web Development Notes</h3>
-        <a href="web.pdf" target="_blank">Download PDF</a>
+        <!-- DBMS -->
+        <div class="subject-content" id="dbms">
+            <h3>📘 DBMS Notes</h3>
+            <a href="dbms.pdf" target="_blank">Download PDF</a>
 
-        <h3>🎥 Video</h3>
-        <iframe src="https://www.youtube.com/embed/Q33KBiDriJY" allowfullscreen></iframe>
+            <h3>🎥 Video</h3>
+            <iframe src="https://www.youtube.com/embed/6Iu45VZGQDk" allowfullscreen></iframe>
+            <p><a href="https://youtu.be/6Iu45VZGQDk" target="_blank">Watch on YouTube</a></p>
 
-        <h3>🔗 Useful Links</h3>
-        <ul class="external-links">
-            <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksforGeeks - Web Development</a></li>
-            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools -HTML</a></li>
-            <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS</a></li>
-            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript</a></li>
-        </ul>
-        <button onclick="window.location".href="quizweb.html">Take Quiz</button>
-        <button></button><a href="quizweb.html".html>take quiz</a>
-    </div>
+            <h3>🔗 Useful Links</h3>
+            <ul class="external-links">
+                <li><a href="https://www.geeksforgeeks.org/dbms/" target="_blank">GeeksforGeeks - DBMS</a></li>
+                <li><a href="https://www.w3schools.com/sql/" target="_blank">W3Schools - SQL</a></li>
+            </ul>
 
-    <!-- AI -->
-    <div class="subject-content" id="ai">
-        <h3>📘 AI Notes</h3>
-        <a href="AI notes.pdf" target="_blank">Download PDF</a>
+            <a class="btn" href="quizdbms.html">Take Quiz</a>
+        </div>
 
-        <h3>🎥 Video</h3>
-         <iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc" allowfullscreen></iframe>
+        <!-- Python -->
+        <div class="subject-content" id="python">
+            <h3>📘 Python Notes</h3>
+            <a href="pdfs/python.pdf" target="_blank">Download PDF</a>
 
-        <h3>🔗 Useful Links</h3>
-        <ul class="external-links">
-            <li><a href="https://www.geeksforgeeks.org/artificial-intelligence-an-introduction/" target="_blank">GeeksforGeeks -AI</a></li>
-            <li><a href="https://www.w3schools.com/ai/" target="_blank">W3Schools -AI</a></li>
-        </ul>
-        <button onclick="window.location".href="quizai.html">Take Quiz</button>
-        <button><a href="quizai.html">take quiz</a></button>
-</div>
-    </div>
+            <h3>🎥 Video</h3>
+            <iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc" allowfullscreen></iframe>
+            <p><a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank">Watch on YouTube</a></p>
 
-</section>
+            <h3>🔗 Useful Links</h3>
+            <ul class="external-links">
+                <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks – Python</a></li>
+                <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools – Python</a></li>
+            </ul>
 
-<footer>
-    <p>© 2026 EduLearn | Learning Made Easy</p>
-</footer>
+            <a class="btn" href="quizpython.html">Take Quiz</a>
+        </div>
 
-<script src="reference.js"></script>
+        <!-- Web Development -->
+        <div class="subject-content" id="web">
+            <h3>📘 Web Development Notes</h3>
+            <a href="web.pdf" target="_blank">Download PDF</a>
+
+            <h3>🎥 Video</h3>
+            <iframe src="https://www.youtube.com/embed/Q33KBiDriJY" allowfullscreen></iframe>
+            <p><a href="https://www.youtube.com/watch?v=Q33KBiDriJY" target="_blank">Watch on YouTube</a></p>
+
+            <h3>🔗 Useful Links</h3>
+            <ul class="external-links">
+                <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksforGeeks - Web Development</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript</a></li>
+            </ul>
+
+            <a class="btn" href="quizweb.html">Take Quiz</a>
+        </div>
+
+        <!-- AI -->
+        <div class="subject-content" id="ai">
+            <h3>📘 AI Notes</h3>
+            <a href="AI notes.pdf" target="_blank">Download PDF</a>
+
+            <h3>🎥 Video</h3>
+            <iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc" allowfullscreen></iframe>
+            <p><a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank">Watch on YouTube</a></p>
+
+            <h3>🔗 Useful Links</h3>
+            <ul class="external-links">
+                <li><a href="https://www.geeksforgeeks.org/artificial-intelligence-an-introduction/" target="_blank">GeeksforGeeks - AI</a></li>
+                <li><a href="https://www.w3schools.com/ai/" target="_blank">W3Schools - AI</a></li>
+            </ul>
+
+            <a class="btn" href="quizai.html">Take Quiz</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 EduLearn | Learning Made Easy</p>
+    </footer>
+
+    <script src="reference.js"></script>
 </body>
 </html>

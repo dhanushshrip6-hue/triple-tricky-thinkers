@@ -7,10 +7,10 @@ function loginUser() {
         return;
     }
 
-    // Save username
+    
     localStorage.setItem("username", username);
 
-    // Redirect to home page
+    
     window.location.href = "home.html";
 }
 

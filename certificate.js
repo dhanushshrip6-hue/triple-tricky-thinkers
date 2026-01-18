@@ -1,25 +1,15 @@
-// SECURITY CHECK (only after quiz)
-if (localStorage.getItem("quizPassed") !== "true") {
-    alert("Access denied");
-    window.location.href = "quiz.html";
-}
+// Make sure this runs after the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    // Get data from localStorage
+    const username = localStorage.getItem("username") || "Student";
+    const quizName = localStorage.getItem("cert_quizname") || "Quiz";
+    const quizDate = localStorage.getItem("cert_date") || new Date().toLocaleDateString();
 
-// FETCH DATA
-const name = localStorage.getItem("studentName") || "Student Name";
-const course = localStorage.getItem("courseName") || "Course Name";
-const score = localStorage.getItem("score") || "0";
-const total = localStorage.getItem("total") || "0";
+    // Set the certificate content
+    document.getElementById("studentName").innerText = username;
+    document.getElementById("quizName").innerText = quizName;
+    document.getElementById("quizDate").innerText = quizDate;
+});
 
-// SET VALUES
-document.getElementById("name").innerText = name;
-document.getElementById("course").innerText = course;
-document.getElementById("score").innerText = `${score}/${total}`;
 
-// DATE (Professional format)
-const options = { day: 'numeric', month: 'long', year: 'numeric' };
-document.getElementById("date").innerText =
-    new Date().toLocaleDateString("en-GB", options);
 
-// CERTIFICATE ID
-document.getElementById("certId").innerText =
-    "CERT-" + Math.floor(100000 + Math.random() * 900000);

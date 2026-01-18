@@ -43,3 +43,5 @@ function startCourse(subject){
         window.location.href = 'ai.html';
     }
 }
+
+
