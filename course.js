@@ -1,44 +1,45 @@
-// ======== DYNAMIC USERNAME AND GREETING ========
-// Get username from localStorage, default to 'Student'
-const username = localStorage.getItem('username') || 'Student';
+document.addEventListener("DOMContentLoaded", () => {
 
-// Get current hour
-const now = new Date();
-const hour = now.getHours();
+    // Get username from localStorage
+    const username = localStorage.getItem("username") || "Student";
 
-// Decide greeting based on time
-let greeting = '';
-if(hour >= 5 && hour < 12){
-    greeting = 'Good Morning';
-} else if(hour >= 12 && hour < 17){
-    greeting = 'Good Afternoon';
-} else {
-    greeting = 'Good Evening';
-}
+    // Greeting logic
+    const hour = new Date().getHours();
+    let greeting = "Hello";
 
-// Update the welcome div dynamically
-const welcomeElement = document.querySelector('.welcome');
-if(welcomeElement){
-    welcomeElement.innerText = `${greeting}, ${username}!`;
-}
+    if (hour < 12) {
+        greeting = "Good Morning 🌞";
+    } else if (hour < 17) {
+        greeting = "Good Afternoon🌤️";
+    } else {
+        greeting = "Good Evening🌛";
+    }
+
+    // Update welcome text
+    const welcomeElement = document.querySelector(".welcome");
+    if (welcomeElement) {
+        welcomeElement.innerText = `${greeting}, ${username}!`;
+    }
+});
 
 
-function startCourse(subject){
-    // Convert subject to lowercase, remove spaces, and add ".html"
-    const page = subject.toLowerCase().replace(/\s+/g, '') + '.html';
-    window.location.href = page;
-}
 
 // function startCourse(subject){
-//     if(subject === 'Data Structures'){
-//         window.location.href = 'sydatastructure.html';
-//     } else if(subject === 'DBMS'){
-//         window.location.href = 'sydbms.html';
-//     } else if(subject === 'Python'){
-//         window.location.href = 'sypython.html';
-//     } else if(subject === 'Web Development'){
-//         window.location.href = 'syweb.html';
-//     }else if(subject === 'AI'){
-//         window.location.href = 'syai.html';
-//     }
+//     // Convert subject to lowercase, remove spaces, and add ".html"
+//     const page = subject.toLowerCase().replace(/\s+/g, '') + '.html';
+//     window.location.href = page;
 // }
+
+function startCourse(subject){
+    if(subject === 'Data Structures'){
+        window.location.href = 'datastructures.html';
+    } else if(subject === 'DBMS'){
+        window.location.href = 'dbms.html';
+    } else if(subject === 'Python'){
+        window.location.href = 'python.html';
+    } else if(subject === 'Web Development'){
+        window.location.href = 'webdevelopment.html';
+    }else if(subject === 'Artificial Intelligence'){
+        window.location.href = 'ai.html';
+    }
+}

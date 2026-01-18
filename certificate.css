@@ -1,0 +1,95 @@
+body {
+    background: #f0f0f0;
+    font-family: Georgia, serif;
+}
+
+.certificate-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.certificate {
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: auto;
+    padding: 50px;
+    border: 10px solid #1a237e;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #1a237e;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+#name {
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#course {
+    font-size: 26px;
+    color: #1a237e;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.sign img {
+    width: 120px;
+}
+
+.sign span {
+    display: block;
+    border-top: 1px solid #000;
+    margin-top: 5px;
+}
+
+.cert-id {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 12px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .certificate, .certificate * {
+        visibility: visible;
+    }
+    .certificate {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+    button {
+        display: none;
+    }
+}

@@ -1,12 +1,16 @@
-function login() {
-    var user = document.getElementById("user").value;
-    var pass = document.getElementById("pass").value;
+function loginUser() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-    if (user == "" || pass == "") {
-        document.getElementById("message").innerHTML = "Fill all fields";
-    } else {
-        localStorage.setItem("username", user);
-        window.location.href = "div.html";
+    if (username === "" || password === "") {
+        alert("Please fill all fields");
+        return;
     }
+
+    // Save username
+    localStorage.setItem("username", username);
+
+    // Redirect to home page
+    window.location.href = "home.html";
 }
 

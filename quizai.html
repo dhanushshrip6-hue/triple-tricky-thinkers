@@ -2,81 +2,81 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DS Quiz</title>
+<title>AI Quiz</title>
+<link rel="stylesheet" href="reference.css">
 <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 
 <div class="quiz-box">
-<h1>Data Structures Quiz</h1>
+<h1>AI Quiz</h1>
 
-<div class="question active" data-answer="Queue">
-<h3>1. Which data structure follows FIFO?</h3>
+<div class="question active" data-answer="Artificial Intelligence">
+<h3>1. What does AI stand for?</h3>
 <select onchange="checkAnswer(this)">
 <option value="">-- Select Answer --</option>
-<option>Stack</option>
-<option>Queue</option>
-<option>Tree</option>
-<option>Graph</option>
+<option>Automatic Integration</option>
+<option>Artificial Intelligence</option>
+<option>Active Interface</option>
+<option>Advanced Internet</option>
 </select>
 </div>
 
-<div class="question" data-answer="Stack">
-<h3>2. Which data structure follows LIFO?</h3>
+<div class="question" data-answer="Machine Learning">
+<h3>2. Which branch of AI allows systems to learn from data?</h3>
 <select onchange="checkAnswer(this)">
 <option value="">-- Select Answer --</option>
-<option>Queue</option>
-<option>Array</option>
-<option>Stack</option>
-<option>Linked List</option>
+<option>Robotics</option>
+<option>Machine Learning</option>
+<option>Computer Vision</option>
+<option>Natural Language Processing</option>
 </select>
 </div>
 
-<div class="question" data-answer="Tree">
-<h3>3. Which is a non-linear data structure?</h3>
+<div class="question" data-answer="Neural Network">
+<h3>3. What type of AI model is inspired by the human brain?</h3>
 <select onchange="checkAnswer(this)">
 <option value="">-- Select Answer --</option>
-<option>Array</option>
-<option>Stack</option>
-<option>Queue</option>
-<option>Tree</option>
+<option>Decision Tree</option>
+<option>Neural Network</option>
+<option>Support Vector Machine</option>
+<option>Bayesian Network</option>
 </select>
 </div>
 
-<div class="question" data-answer="Stack">
-<h3>4. Which data structure is used in recursion?</h3>
+<div class="question" data-answer="Supervised Learning">
+<h3>4. Which type of machine learning uses labeled data?</h3>
 <select onchange="checkAnswer(this)">
 <option value="">-- Select Answer --</option>
-<option>Queue</option>
-<option>Stack</option>
-<option>Heap</option>
-<option>Graph</option>
+<option>Unsupervised Learning</option>
+<option>Reinforcement Learning</option>
+<option>Supervised Learning</option>
+<option>Deep Learning</option>
 </select>
 </div>
 
-<div class="question" data-answer="Linked List">
-<h3>5. Which data structure uses pointers?</h3>
+<div class="question" data-answer="ChatGPT">
+<h3>5. Which AI model is known for generating human-like text?</h3>
 <select onchange="checkAnswer(this)">
 <option value="">-- Select Answer --</option>
-<option>Array</option>
-<option>Linked List</option>
-<option>Stack</option>
-<option>Queue</option>
+<option>BERT</option>
+<option>ChatGPT</option>
+<option>ResNet</option>
+<option>GAN</option>
 </select>
 </div>
 
 </div>
 
-<!-- Correct Birthday Gift Style Popup -->
 <div id="giftPopup">
 <div class="gift-content">
 <h1>🎁 Surprise!</h1>
 <p>Correct Answer! You earned a gift!</p>
+<img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="gift animation">
 <button onclick="nextQuestion()">Next</button>
 </div>
 </div>
 
-<!-- Wrong Popup -->
 <div id="wrongPopup">
 <div class="gift-content">
 <h1>❌ Wrong!</h1>
@@ -89,3 +89,4 @@
 </body>
 <footer><a href="home.html">← Back to References</a></footer>
 </html>
+

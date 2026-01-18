@@ -1,23 +1,12 @@
 
-  .data {
+  body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
-
-  background-image: url("web.jpg"); /* SAME image for all pages */
+  background-image:url("greenn.png");
+ 
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-
-  padding: 20px;
-}
-.python{
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-
-  background-image: url("database.png"); /* SAME image for all pages */
-  background-position: center;
-  background: size 100%;;
-
   padding: 20px;
 }
 
@@ -29,9 +18,9 @@ h1 {
 
 /* Subject box */
 .box {
-  background: white;
+  background: rgb(251, 254, 255);
   margin: 15px auto;
-  padding: 15px;
+  padding: 30px;
   width: 80%;
   border-radius: 8px;
   border: 2px solid #232425;  
@@ -46,7 +35,7 @@ h2 {
 
 
 .box:hover {
-  background-color: #f1f6ff;  
+  background-color: #2222ec;  
 }
 
 ul {

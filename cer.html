@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="certificate.css">
+</head>
+<body>
+
+<div class="certificate-wrapper">
+
+    <div class="certificate">
+
+        <img src="logo.png" class="logo" alt="Logo">
+
+        <h1>Certificate of Completion</h1>
+        <p class="subtitle">This is to certify that</p>
+
+        <h2 id="name"></h2>
+
+        <p class="text">has successfully completed the course</p>
+
+        <h3 id="course"></h3>
+
+        <p class="text">
+            Score: <span id="score"></span>
+        </p>
+
+        <p class="text">
+            Date: <span id="date"></span>
+        </p>
+
+        <div class="footer">
+            <div class="sign">
+                <img src="sign.png" alt="Signature">
+                <span>Authorized Signature</span>
+            </div>
+        </div>
+
+        <div class="cert-id">
+            Certificate ID: <span id="certId"></span>
+        </div>
+
+    </div>
+
+    <button onclick="window.print()">Download Certificate</button>
+
+</div>
+
+<script src="certificate.js"></script>
+</body>
+</html>
